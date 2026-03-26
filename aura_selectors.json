@@ -1,26 +1,26 @@
 {
   "wiki": {
     "title": "h2",
-    "author": "a[href*='tac-gia'], .author",
+    "author": "a[href^='/tac-gia/']",
     "cover": "img[src^='/photo/']",
-    "tags": "a[href*='the-loai']"
+    "tags": "p span a[href*='/tim-kiem']"
   },
   "ungty": {
     "title": "h1",
-    "author": ".author, a[href*='tac-gia']",
-    "cover": "img",
-    "tags": ".tags a, .the-loai a"
+    "author": "a[href^='/tac-gia']",
+    "cover": "img[src*='/images/comics/']",
+    "tags": "div > span:nth-child(2) > span"
   },
   "dualeotruyen": {
     "title": "h1",
-    "author": ".author, .tac-gia",
-    "cover": "div > div > img",
-    "tags": "ul a, ul li a"
+    "author": ".author, .tac-gia, a[href^='/tac-gia/']",
+    "cover": "img[src*='/story/']",
+    "tags": "h1 ~ ul a[href*='/the-loai/']"
   },
   "default": {
-    "title": "h1, h2, .title, .cover-info h2",
-    "author": "[class*='author'], [href*='tac-gia'], .author, .tac-gia",
-    "cover": ".cover img, .book-info img, [src*='cover'], .cover-wrapper img",
-    "tags": ".tags a, [class*='tag'], .book-desc a, [class*='category'], .kind-list a, a[href*='the-loai']"
+    "title": "h1, h2, .title, .cover-info h2, .book-title, .truyen-title, [property='og:title']",
+    "author": "[class*='author'], a[href*='tac-gia'], a[href*='author'], .tac-gia, [property='books:author']",
+    "cover": ".cover img, .book-info img, [src*='cover'], .cover-wrapper img, .book-cover img, img.cover, .thumb img, [property='og:image']",
+    "tags": ".tags a, a[href*='the-loai'], .genres a, .info a[href*='category'], [class*='tag'] a, [class*='category'] a"
   }
 }
