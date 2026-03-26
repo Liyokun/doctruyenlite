@@ -1,13 +1,13 @@
 {
   "wiki": {
     "title": "h2",
-    "author": "a[href^='/tac-gia/']",
+    "author": "h2 ~ p a[href^='/tac-gia/']",
     "cover": "img[src^='/photo/']",
     "tags": "p span a[href*='/tim-kiem']"
   },
   "ungty": {
     "title": "h1",
-    "author": "a[href^='/tac-gia']",
+    "author": ".author a, a[href^='/tac-gia']",
     "cover": "img[src*='/images/comics/']",
     "tags": "div > span:nth-child(2) > span"
   },
