@@ -1,0 +1,26 @@
+{
+  "wiki": {
+    "title": "h2",
+    "author": "a[href*='tac-gia'], .author",
+    "cover": "img[src^='/photo/']",
+    "tags": "a[href*='the-loai']"
+  },
+  "ungty": {
+    "title": "h1",
+    "author": ".author, a[href*='tac-gia']",
+    "cover": "img",
+    "tags": ".tags a, .the-loai a"
+  },
+  "dualeotruyen": {
+    "title": "h1",
+    "author": ".author, .tac-gia",
+    "cover": "div > div > img",
+    "tags": "ul a, ul li a"
+  },
+  "default": {
+    "title": "h1, h2, .title, .cover-info h2",
+    "author": "[class*='author'], [href*='tac-gia'], .author, .tac-gia",
+    "cover": ".cover img, .book-info img, [src*='cover'], .cover-wrapper img",
+    "tags": ".tags a, [class*='tag'], .book-desc a, [class*='category'], .kind-list a, a[href*='the-loai']"
+  }
+}
